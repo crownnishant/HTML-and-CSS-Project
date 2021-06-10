@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+    <title>Working with Controller</title>  
+    <script src="Script/angular.js"></script>  
+    <script>  
+        // Declare a module  
+        var myApp = angular.module('myApp', []);  
+        //Registering a controller in myApp module  
+        myApp.controller('myController', function ($scope) {  
+            $scope.Name = "Anoop Kumar Sharma";  
+            $scope.Website = "www.ittutorialswithexample.com";  
+        });  
+    </script>  
+</head>  
+<body ng-app="myApp">  
+    <div ng-controller="myController">  
+        Name:{{Name}}<br />  
+        Website:{{Website}}  
+    </div>  
+</body>  
+</html> 
